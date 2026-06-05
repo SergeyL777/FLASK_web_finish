@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="login-register-container">
+    <form method="POST" class="fade-in">
+        <h2>Регистрация</h2>
+        {% if error %}<div class="error">{{ error }}</div>{% endif %}
+        <input type="text" name="username" placeholder="Логин" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+{% endblock %}

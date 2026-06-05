@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card-detail fade-in">
+    <h1>{{ card.title }}</h1>
+    {% if card.subtitle %}
+        <p class="subtitle">{{ card.subtitle }}</p>
+    {% endif %}
+    <p>{{ card.text }}</p>
+    <a href="{{ url_for('index') }}">Назад к списку карточек</a>
+</div>
+{% endblock %}

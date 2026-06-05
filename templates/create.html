@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST" action="{{ url_for('form_create') }}" class="create-form fade-in">
+    <h2 class="page-title">Создание новой карточки</h2>
+    <input type="text" name="title" placeholder="Заголовок карточки" required>
+    <input type="text" name="subtitle" placeholder="Подзаголовок (необязательно)">
+    <textarea name="text" placeholder="Текст карточки" required></textarea>
+    <button type="submit">Создать карточку</button>
+</form>
+{% endblock %}
