@@ -40,4 +40,8 @@
 **Запустите приложение:**
 
 * bash
+<<<<<<< HEAD
   python main.py
+=======
+  python main.py
+>>>>>>> 47003dcd1e66817b6c19ff3576995141849f80a7
